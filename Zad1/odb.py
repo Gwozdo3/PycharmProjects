@@ -1,4 +1,4 @@
 import odbchelper
 params = {"server":"mpilgrim", "database":"master", "uid":"sa", "pwd":"secret"}
 print odbchelper.buildConnectionString(params)
-print odbchelper.buildConnectionString.__doc__
+print odbchelperctionString.__doc__
