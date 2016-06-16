@@ -96,3 +96,24 @@ print lisplit1 #['pwd=secret', 'database=master', 'uid=sa', 'server=mpilgrim']
 #w splicie moga byc 2 argumenty , gdzie drugi definiuje ile max razy ma podzielic:
 lisplit2=k.split(";",1)
 print lisplit2 #['pwd=secret', 'database=master;uid=sa;server=mpilgrim']
+
+
+
+print"------- Filtracja Listy --------------"
+
+li=["a", "mpilgrim", "foo", "b", "c", "b", "d", "d"]
+print [randname for randname in li if len(randname) > 1]
+#filtruje liste nastepujaco: zwraca element(randname) dla: kazdego elementu (randname) z listy(li) jeżeli
+#dlugosc elementu jest > od 1
+print [randname+":   posiada w sobie i "for randname in li if ("i") in randname]
+#ta sama zasada ale wypisuje element jezeli znajdzie w elemencie listy litere i
+
+dict={"a":"b", "d":"c","z":"f","c":"h"}
+
+print["%s i %s" % (k,v) for k,v in dict.items() if "c" in k or "b" in v ]
+
+#tutaj mamy zabawe z dictionary.
+#print wypisuje nam ekran "%k  i  %v" dla każdej pary k i v z dictionary(szuka w .items()) jezeli k=c albo v=b
+
+
+
